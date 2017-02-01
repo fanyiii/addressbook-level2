@@ -1,8 +1,5 @@
 package seedu.addressbook.data.person;
 
-import seedu.addressbook.data.exception.IllegalValueException;
-
-
 /**
  * Represents a Person's street in the address book.
  * Guarantees: immutable
