@@ -14,7 +14,7 @@ public class Unit {
      *
      * @throws IllegalValueException if given unit string is invalid.
      */
-    public Unit(String unit) throws IllegalValueException {
+    public Unit(String unit) {
         this.value = unit;
     }
 
