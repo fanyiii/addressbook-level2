@@ -145,6 +145,13 @@ public class AddressBook {
     public UniqueTagList getAllTags() {
         return new UniqueTagList(allTags);
     }
+    
+    /**
+     * Return a list of all the tags added/deleted during that session
+     */
+    public ArrayList<Tagging> getTaggingsInSession() {
+    	return taggingsInSession;
+    }
 
     @Override
     public boolean equals(Object other) {
