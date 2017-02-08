@@ -3,6 +3,7 @@ package seedu.addressbook.ui;
 import static seedu.addressbook.common.Messages.*;
 
 import seedu.addressbook.commands.CommandResult;
+import seedu.addressbook.data.Tagging;
 import seedu.addressbook.data.person.ReadOnlyPerson;
 
 import java.io.InputStream;
@@ -126,6 +127,12 @@ public class TextUi {
             showPersonListView(resultPersons.get());
         }
         showToUser(result.feedbackToUser, DIVIDER);
+    }
+    
+    public void showTaggingsToUser(ArrayList<Tagging> taggings) {
+    	for (Tagging t : taggings) {
+    		showToUser(t.toString());
+    	}
     }
 
     /**
